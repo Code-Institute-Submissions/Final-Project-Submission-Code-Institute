@@ -1,4 +1,59 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
 
-{% block content %}
+<div class="container-fluid landing-page">
+<section class="jumbotron text-center">
+    <div class="container-fluid page-focus">
+        <h1 class="display-4">Welcome to Unicorn Attractor's <br>Issue Tracker</h1>
+        <p class="lead"><br>Do you have any bugs that need attention or any features you want added to Unicorn Attractor?</p>
+        <p class="lead">You've come to the right place.</p>
+        <hr class="my-1">
+        <p class="lead"> <a class="btn btn-success btn-lg" href="{% url 'register' %}" role="button">Sign Up!</a> </p>
+    </div>
+</section>
+</div>
+
+<div class="container-wrapper center">
+    <div class="container">
+        <!-- Features -->
+        <section class="features">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h1 class="display-4 text-uppercase">What can we offer?</h2>
+                        <hr class="my-2">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="feature">
+                        <h3 class="display-3"><span class="glyphicon glyphicon-star-empty hidden-xs"></span><span class="glyphicon glyphicon-star-empty hidden-xs"></span><span class="glyphicon glyphicon-star-empty hidden-xs"></span><br>Top Rated</h3>
+                        <p>
+                            Rated best solution for UnicornAttractor bug fixes!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="feature">
+                        <h3 class="display-3"><span class="glyphicon glyphicon-user glyphicon--top hidden-xs"></span>A Voice</h3>
+                        <p>
+                            We offer a voice to users of Unicorn Attractor to give feedback on bugs and also features that they themsleves would like to see implemented.
+                        </p>
+                        <p><a class="btn btn-lg btn--cta btn--red btn-sm" href="">View Tracker</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="feature">
+                        <h3 class="display-3"><span class="glyphicon glyphicon-question-sign glyphicon--top hidden-xs"></span>About Us</h3>
+                        <p>
+                            Learn more about our goals!
+                        </p>
+                        <p><a class="btn btn-lg btn--cta btn--red btn-sm" data-toggle="modal" data-target="#aboutUsModal">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.features -->
+    </div>
+</div>
 {% endblock %}
