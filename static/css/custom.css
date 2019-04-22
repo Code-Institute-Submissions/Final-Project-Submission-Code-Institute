@@ -1,14 +1,21 @@
 body {
     font-family: Arial;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 0px;
     padding-top: 40px;
+    padding-left:20px;
     padding-bottom: 40px;
     border-top: 1px solid #ededed;
-    color: #A9A9A9;
+    color: #fff;
+    background-color: #21A685;
+    /*background-image: linear-gradient(#53b4eb, #178acc);*/
+}
+
+.center {
+    text-align: center;
 }
 
 .icon-bar {
@@ -29,7 +36,7 @@ footer {
 
 .label-warning[href],
 .badge-warning[href] {
-    background-color:  #c67605;
+    background-color: #c67605;
 }
 
 .product {
@@ -63,4 +70,131 @@ caption p {
 
 .product-description {
     min-height: 40px;
+}
+
+/* ----------------------- INDEX */
+
+.landing-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/images/code.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron {
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    margin-bottom: 0px;
+    height: 70vh;
+}
+
+.container-fluid {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+/*---------------------------------------Headers*/
+
+.page-header {
+    border-bottom: none;
+}
+
+.display-4 {
+    color: #6053C0;    
+}
+
+.display-3 {
+    color: #6053C0;
+}
+
+/*---------------------------------------Jumbotron*/
+
+.jumbotron h1 {
+    color: white;
+    font-size: 65px;
+}
+
+.jumbotron p {
+    margin-bottom: 25px;
+    margin-top: 32px;
+    font-size: 25px;
+    color: white;
+}
+
+.fullwidth {
+    width: 100%;
+    background-size: cover;
+    padding: 0px;
+}
+
+/*---------------------------------------dividers*/
+
+.my-1 {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 0 1px;
+    width: 40%;
+    height: 10px;
+    line-height: 20px;
+    text-align:center;
+}
+
+.my-2 {
+    border-color: #6053C0;
+    border-style: solid;
+    border-width: 0 0 1px;
+    width: 20%;
+    height: 10px;
+    line-height: 20px;
+    text-align:center;
+}
+
+/*---------------------------------------Feature*/
+
+.features {
+    background-color: #FFB133;
+    background-image: linear-gradient(#FFB133, #FF8B00);
+    color: #6053C0;
+    border-top: 1px solid #ededed;
+    padding-bottom: 41px;
+}
+
+.feature .glyphicon--top {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .glyphicon {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+    color: #6053C0;
+}
+
+/*---------------------------------------Navbar*/
+
+.container .navbar-collapse {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+navbar-default {
+    background-color: black;
 }
