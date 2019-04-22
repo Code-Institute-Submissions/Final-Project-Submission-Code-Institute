@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from accounts import urls as urls_accounts
+from home import urls as urls_home
 from bugs import urls as urls_bugs
 from features import urls as urls_features
 from cart import urls as urls_cart
 from checkout import urls as urls_checkout
+from home.views import index
 from bugs.views import all_bugs
 from features.views import all_features
 from django.views import static
@@ -27,7 +29,8 @@ from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', all_bugs, name='index'),
+    url(r'^$', index, name='index'),
+    url(r'^home/', include(urls_home)),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^bugs/', include(urls_bugs)),
     url(r'^features/', include(urls_features)),
