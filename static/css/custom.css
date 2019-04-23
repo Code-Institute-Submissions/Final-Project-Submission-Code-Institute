@@ -6,7 +6,7 @@ body {
 footer {
     margin-top: 0px;
     padding-top: 40px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-bottom: 40px;
     border-top: 1px solid #ededed;
     color: #fff;
@@ -53,9 +53,14 @@ caption p {
 }
 
 .row.row-flex {
-    display: flex;
+    display: initial;
     flex-wrap: wrap;
     margin-top: 30px;
+    
+}
+
+.totes {
+    margin-left: 30px;
 }
 
 .panel-default {
@@ -111,7 +116,7 @@ caption p {
 }
 
 .display-4 {
-    color: #6053C0;    
+    color: #6053C0;
 }
 
 .display-3 {
@@ -147,7 +152,7 @@ caption p {
     width: 40%;
     height: 10px;
     line-height: 20px;
-    text-align:center;
+    text-align: center;
 }
 
 .my-2 {
@@ -157,7 +162,7 @@ caption p {
     width: 20%;
     height: 10px;
     line-height: 20px;
-    text-align:center;
+    text-align: center;
 }
 
 /*---------------------------------------Feature*/
