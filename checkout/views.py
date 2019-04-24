@@ -6,7 +6,7 @@ from .models import OrderLineItem
 from django.conf import settings
 from django.utils import timezone
 from features.models import Feature
-import stripe
+import stripe 
 
 
 # Create your views here.
@@ -18,17 +18,17 @@ def checkout(request):
     if request.method=="POST":
         order_form = OrderForm(request.POST)
         payment_form = MakePaymentForm(request.POST)
-        
+
         if order_form.is_valid() and payment_form.is_valid():
             order = order_form.save(commit=False)
             order.date = timezone.now()
             order.save()
-            
+
             cart = request.session.get('cart', {})
             total = 0
             for item_id, quantity in cart.items():
                 feature = get_object_or_404(Feature, pk=item_id)
-                total += quantity * feature.price
+                total += quantity * 10
                 order_line_item = OrderLineItem(
                     order = order, 
                     feature = feature, 

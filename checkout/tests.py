@@ -1,5 +1,6 @@
 from django.test import TestCase
 from .models import Feature
+from .forms import MakePaymentForm
 
 # Create your tests here.
 class FeatureTest(TestCase):
