@@ -13,7 +13,7 @@ class Bug(models.Model):
     status = models.CharField(max_length=6, choices=STATUS_CHOICES, default="todo")
     upvotes = models.IntegerField(default=0)
     views = models.IntegerField(default=0)
-    author = models.ForeignKey(User, default= 1)
+    author = models.ForeignKey(User, related_name='User', default=1)
     
     def __str__(self):
         return self.name

@@ -6,7 +6,7 @@
 <div id="wrapper">
     <em>*In order to add these features for our users and wider community, we have decided that we can only focus on these projects if we have enough interest from the community.
     If you are interested in any feature listed here, then you can vote for it. By clicking "Vote", it will add a nominal fee to your cart of €10 - 
-    this is the donation we need to focus on these requested projects. Thank you for understanding.</em>
+    this is the donation we need to focus on these requested projects. Thank you for understanding!</em>
     <div class="row row-flex">
         {% for feature in features %}
 
@@ -17,6 +17,7 @@
                 <p class="product-description card-text">{{ feature.description }}</p>
                 <div class="panel panel-status">
                     <h5 class="card-title">Status: </h5><span>{{ feature.status }}</span>
+                    <h5 class="card-title">Author: </h5><span>{{ feature.author }}</span>
                 </div>
                 <form method="post" action="{% url 'add_to_cart' feature.id %}">
                     {% csrf_token %}

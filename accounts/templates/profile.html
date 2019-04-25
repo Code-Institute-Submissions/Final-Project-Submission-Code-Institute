@@ -15,7 +15,7 @@
             <a href="{% url 'new_bug' %}"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Add Bug</button></a>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <a href="#"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>Add Feature</button></a>
+            <a href="{% url 'new_feature' %}"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span>Add Feature</button></a>
         </div>
     </div>
 </div>
@@ -55,7 +55,7 @@
             <h4 class="card-title">{{ feature.name }}</h4>
             <p class="product-description card-text">{{ feature.description }}</p>
 
-            <form method="post" action="#">
+            <form method="post" action="{% url 'feature_details' feature.id %}">
                 {% csrf_token %}
                 <button class="btn btn-success" type="submit"><span>View</span></button>
             </form>

@@ -5,6 +5,7 @@ from .forms import UserLoginForm, UserRegistrationForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from bugs.models import Bug
+from features.models import Feature
 
 
 # Create your views here.
@@ -50,7 +51,8 @@ def login(request):
 def profile(request):
     """A view that displays the profile page of a logged in user"""
     bugs = Bug.objects.filter(author=request.user)
-    return render(request, 'profile.html', {'bugs':bugs})
+    features = Feature.objects.filter(author=request.user)
+    return render(request, 'profile.html', {'bugs':bugs}, {'features':features})
 
 
 def register(request):

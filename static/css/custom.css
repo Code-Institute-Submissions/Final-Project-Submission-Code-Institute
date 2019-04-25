@@ -34,16 +34,25 @@ footer {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    min-height: -webkit-fill-available;
 }
 
 .icon-bar {
     background-color: #fff;
 }
 
+.alert {
+    margin-bottom: 0px;
+}
+
+
 .accountform {
     padding-top: 20px;
 }
 
+.btn {
+    margin-top: 20px;
+}
 .badge {
     padding-left: 9px;
     padding-right: 9px;
@@ -77,9 +86,10 @@ caption p {
 }
 
 .row.row-flex {
-    display: initial;
+    display: block;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 
 }
 
@@ -160,6 +170,10 @@ caption p {
     color: #6053C0;
 }
 
+.h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /*---------------------------------------Jumbotron*/
 
 .jumbotron h1 {
