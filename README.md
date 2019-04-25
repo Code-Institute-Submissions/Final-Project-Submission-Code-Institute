@@ -1,9 +1,11 @@
+[![Build Status](https://travis-ci.org/coderguider/Final-Project-Submission-Code-Institute.svg?branch=master)](https://travis-ci.org/coderguider/Final-Project-Submission-Code-Institute)
+
 # CREATE AN ISSUE TRACKER
 
 ## Brief
 
 Create a web application that allows users to report bugs and suggest features.
-
+[View Site]()
 ## Technologies
 
 1. Django
