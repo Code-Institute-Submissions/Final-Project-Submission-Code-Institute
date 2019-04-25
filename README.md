@@ -5,7 +5,7 @@
 ## Brief
 
 Create a web application that allows users to report bugs and suggest features.
-[View Site]()
+
 ## Technologies
 
 1. Django
