@@ -5,6 +5,16 @@
 ## Brief
 
 Create a web application that allows users to report bugs and suggest features.
+[View Site](https://unicornattractor-issuetracker.herokuapp.com/)
+
+## How to Use Web Application
+
+* Once you visit the site you need to register an account.
+* Once registered you will be able to add your own bugs and features
+* You can view them from your profile
+* In order to Vote for features you will have to pay a fee of €10
+* This is done with Stripes API - DO NOT USE YOUR OWN CREDIT CARD NUMBER - USE 4242 4242 4242 4242 - THIS IS FOR TESTING PURPOSES ONLY
+* The Admin will have their own protocol to view bugs and features posted, as well as mark their progress
 
 ## Technologies
 
@@ -42,6 +52,27 @@ Manual testing was undertaken for this application and satisfactorily passed. Te
 Built primarily off the mini project example as the basic framework. Website layout was implemented with Bootstrap and custom styled.
 
 ## Deployment
+
+Create a django project:
+$ django-admin startproject UnicornAttractor
+
+Make the migrations:
+$ python3 manage.py makemigrations
+
+Run migrate:
+$ python3 manage.py migrate
+
+Run migrations on Heroku:
+$ heroku run python3 manage.py migrate
+
+Create a superuser:
+$ python manage.py createsuperuser
+
+Install requirements with pip:
+$ pip install -r requirements.txt
+
+Run the python file:
+$ python3 manage.py runserver $IP:$PORT
 
 
 ## Credits
