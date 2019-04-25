@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 class="display-2">Bug Details</h1>
+
+<div class="row row-flex">
+    <h4 class="card-title">Bug Title : {{ bug.name }}</h4>
+    <div class="col-xs-12">
+        <p>{{ bug.description }}</p>
+        <div class="row">
+            <h5><span class="">Author: </span>{{ bug.author }}</h5>
+            <a href="{% url 'bugs' %}" class="btn btn-success">Back</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
