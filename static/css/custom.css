@@ -18,7 +18,7 @@ footer {
     border-top: 1px solid #ededed;
     color: #fff;
     background-color: #21A685;
-    /*background-image: linear-gradient(#53b4eb, #178acc);*/
+    background-image: linear-gradient(#53b4eb, #178acc);
 }
 
 .center {
@@ -52,6 +52,7 @@ footer {
 
 .btn {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .badge {
     padding-left: 9px;
@@ -107,7 +108,7 @@ caption p {
 
 
 .panel-default {
-    border-color: transparent;
+    border-color: #eeeeee;
     padding: 0 10px;
 }
 
@@ -170,9 +171,8 @@ caption p {
     color: #6053C0;
 }
 
-.h1 {
-    padding-left: 15px;
-    padding-right: 15px;
+.display-2 {
+    padding-left: 20px;
 }
 /*---------------------------------------Jumbotron*/
 
