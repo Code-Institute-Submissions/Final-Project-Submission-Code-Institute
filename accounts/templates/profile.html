@@ -25,16 +25,18 @@
         <h3 class="display-4">Your Bugs:</h3>
     </div>
 </div>
-<div class="panel-group" id="accordion">
+<div class="row row-flex">
     {% for bug in bugs %}
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">{{ bug.name }} - {{ bug.status }}</a>
-            </h4>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">{{ bug.description }}</div>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+        <div class="panel panel-default">
+
+            <h4 class="card-title">{{ bug.name }}</h4>
+            <p class="product-description card-text">{{ bug.description }}</p>
+
+            <form method="post" action="#">
+                {% csrf_token %}
+                <button class="btn btn-success" type="submit"><span>I have this too!</span></button>
+            </form>
         </div>
     </div>
     {% endfor %}
@@ -45,16 +47,18 @@
         <h3 class="display-4">Your Features:</h3>
     </div>
 </div>
-<div class="panel-group" id="accordion">
+<div class="row row-flex">
     {% for feature in features %}
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">{{ feature.name }}</a>
-            </h4>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">{{ feature.description }}</div>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default">
+        <div class="panel panel-default">
+
+            <h4 class="card-title">{{ feature.name }}</h4>
+            <p class="product-description card-text">{{ feature.description }}</p>
+
+            <form method="post" action="#">
+                {% csrf_token %}
+                <button class="btn btn-success" type="submit"><span>I have this too!</span></button>
+            </form>
         </div>
     </div>
     {% endfor %}
